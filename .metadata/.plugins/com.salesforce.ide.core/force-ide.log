@@ -1,0 +1,35 @@
+ WARN [2017-12-27 14:23:18,929] (ComponentResource.java:loadFromFile:430) - File 'src/package.xml' does not exist
+ WARN [2017-12-27 14:27:28,688] (ProjectController.java:handleRetrieveResults:684) - Failed to retrieve: 'Trailhead Playground/package.xml': Metadata API received improper input. Please ensure file name and capitalization is correct. Load of metadata from db failed for metadata of type:ConnectedApp and file name:Trailhead.
+ WARN [2017-12-27 14:27:50,803] (Utils.java:loadDocument:807) - Unable to load document: C:\TrailHead\Lightning FrameWork Specialist\.metadata\.plugins\org.eclipse.core.resources\.projects\Lightning Framework\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+ WARN [2017-12-27 14:27:52,094] (Utils.java:loadDocument:807) - Unable to load document: C:\TrailHead\Lightning FrameWork Specialist\.metadata\.plugins\org.eclipse.core.resources\.projects\Lightning Framework\com.salesforce.ide.core\packageCache.xml (The system cannot find the file specified)
+ERROR [2017-12-27 14:31:57,848] (SyncServiceListenerBroadcaster.java:handleException:59) - Error executing a contributed ISyncServiceListener
+java.lang.NullPointerException
+	at com.salesforce.ide.core.model.ComponentList.getComponentFactory(ComponentList.java:59)
+	at com.salesforce.ide.core.model.ComponentList.getComponentListForComponentType(ComponentList.java:261)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectDebuggerElements(SyncActionListener.java:145)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.collectApexDebuggerElementsWithOpenedEditors(SyncActionListener.java:120)
+	at com.salesforce.ide.debug.ui.sync.SyncActionListener.projectSync(SyncActionListener.java:113)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster$1.run(SyncServiceListenerBroadcaster.java:54)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.executeExtension(SyncServiceListenerBroadcaster.java:62)
+	at com.salesforce.ide.core.services.hooks.SyncServiceListenerBroadcaster.broadcast(SyncServiceListenerBroadcaster.java:40)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1067)
+	at com.salesforce.ide.core.model.ProjectPackageList.saveResources(ProjectPackageList.java:1001)
+	at com.salesforce.ide.core.services.ProjectService$1.run(ProjectService.java:2137)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.salesforce.ide.core.services.ProjectService.handleRetrieveResult(ProjectService.java:2133)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshSourceFolder(RefreshResourceActionController.java:214)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.handleSourceRefresh(RefreshResourceActionController.java:172)
+	at com.salesforce.ide.ui.actions.RefreshResourceActionController.refreshResources(RefreshResourceActionController.java:127)
+	at com.salesforce.ide.ui.handlers.RefreshResourceHandler$1.execute(RefreshResourceHandler.java:87)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+ WARN [2017-12-27 14:31:57,850] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2017-12-27 14:31:57,851] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
+ WARN [2017-12-27 14:31:57,852] (MarkerUtils.java:applyRetrieveMarker:325) - Unable to apply retrieve warning marker to resource - resource is null
